@@ -20,8 +20,8 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: "https://obscure-caverns-72816.herokuapp.com/"
-                //url: "http://localhost:5000"
+                //url: "https://obscure-caverns-72816.herokuapp.com/"
+                url: "http://localhost:5000"
             }
         ]
     },
@@ -29,7 +29,7 @@ const swaggerSpec = {
 }
 
 //settings
-app.set('port', process.env.PORT || 5000); //Heroku probablemente nos asigne un puerto. Sino, port=3000;
+app.set('port', process.env.PORT || 5000); //Heroku probablemente nos asigne un puerto. Sino, port=5000;
 app.set('json spaces' , 2); // para mejorar la visualizacion de los json
 
 
